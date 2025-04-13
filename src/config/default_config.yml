@@ -1,0 +1,59 @@
+# GitHub Organization Configuration
+# This file defines milestones and labels to be applied to repositories
+
+# Optional: List of specific repositories to apply configuration to
+# If omitted, applies to all repositories in the organization
+repositories:
+  - crypto-trading-ui
+  - crypto.api
+
+# Milestones to create in each repository
+milestones:
+  - title: "MVP"
+    description: "Minimum Viable Product Release"
+    state: "open"
+    due_on: "2025-05-04" # Format: YYYY-MM-DD
+
+  - title: "Q2 2025"
+    description: "Second quarter goals and deliverables"
+    state: "open"
+    due_on: "2025-06-30"
+
+  - title: "Q3 2025"
+    description: "Third quarter goals and deliverables"
+    state: "open"
+    due_on: "2025-09-30"
+
+# Labels to create in each repository
+labels:
+  - name: "no-code"
+    color: "cccccc"
+    description: "Non-code changes like docs or config"
+
+  - name: "fix"
+    color: "d73a4a"
+    description: "Traditional bug fix or issue"
+
+  - name: "chore"
+    color: "a2a9b1"
+    description: "Low-priority or background task"
+
+  - name: "feat"
+    color: "0e8a16"
+    description: "New feature or positive enhancement"
+
+  - name: "in-progress"
+    color: "fbca04"
+    description: "Active work underway"
+
+  - name: "needs-review"
+    color: "5319e7"
+    description: "Action needed from reviewers"
+
+  - name: "pending-verification"
+    color: "006b75"
+    description: "Waiting on validation"
+
+  - name: "verified"
+    color: "1d76db"
+    description: "Confirmed and stable"

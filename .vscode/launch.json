@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run GitHub Config (with .env token)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/github_config.py",
+      "args": [
+        "--config",
+        "config.yml",
+        "--organization",
+        "Luna-Crypto-Trading",
+        "--dry-run",
+        "--summary"
+      ],
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run GitHub Config (explicit token)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/github_config.py",
+      "args": [
+        "--token",
+        "ghp_yourTokenHere",
+        "--config",
+        "config.yml",
+        "--summary"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}
